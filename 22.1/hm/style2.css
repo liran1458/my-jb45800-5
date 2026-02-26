@@ -1,0 +1,74 @@
+body {
+    direction: rtl;
+    text-align: right;
+    font-size: 1.4rem;
+    background-color: lightblue;
+}
+
+.headerText {
+    text-align: center;
+}
+
+.nav-bar {
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.nav-bar a {
+    font-size: larger;
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content p {
+    text-align: center;
+}
+
+.content img {
+    width: 25rem;
+    height: 18.5rem;
+}
+
+#copyrights {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.animal-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;              
+    width: 70%;               
+    margin: 0 auto;           
+    padding: 1rem;
+}
+
+.animal-content img {
+    width: 15rem;              
+    height: 13rem;
+    object-fit: cover;        
+    border-radius: 10px;
+    display: block;
+}
+.contact-table{
+    text-align: center;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="headerText">חנות חיות</h1>
+        <hr>
+    </header>
+    <div>
+        <div class="nav-bar">
+            <a href="index2.html">דף הבית</a>
+            <a href="animal.html">חיות </a>
+            <a href="contact.html">צור קשר</a>
+
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" action="save.html">
+                <table class="contact-table">
+                    <h2 style="font-weight: bold;">צור קשר:</h2>
+                    <tr>
+                        <td class="left">
+                            <label for="name">שם פרטי:</label>
+                        </td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td class="left">
+                            <label for="lastName">שם משפחה:</label>
+                        </td>
+                        <td><input type="text" id="lastName" required></td>
+                    </tr>
+                    <tr>
+                        <td class="left">מין:</td>
+                        <td>
+                            <label>
+                                <input type="radio" name="gender" value="male">
+                                זכר
+                            </label>
+
+                            <label>
+                                <input type="radio" name="gender" value="female">
+                                נקבה
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"> עיר:</td>
+                        <td>
+                            <select required>
+                                <option disabled selected value="">בחר עיר...</option>
+                                <option value="TLV">תל אביב</option>
+                                <option value="JRS">ירושלים</option>
+                                <option value="HFA">חיפה</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">הודעה:</td>
+                        <td>
+                            <textarea rows="4" required></textarea>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td></td>
+                        <td class="left">
+                            <button type="submit"> כניסה </button>
+                            <button type="submit"> נקה </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+
+
+    </div>
+    <p id="copyrights">כל הזכויות שמורות &copy;</p>
+
+</body>
+
+</html>

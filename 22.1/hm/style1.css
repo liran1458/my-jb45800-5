@@ -1,0 +1,45 @@
+body {
+    direction: rtl;
+    font-size: 1.5rem;
+    background-image: url(https://takiart.co.il/wp-content/uploads/2018/06/image3_3128_2018-05-06_13-53-52.jpg);
+}
+
+
+.header-text {
+    text-align: center;
+    color: rgb(217, 28, 28);
+
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.login-table {
+    border: 1px solid black;
+    margin-top: 3rem;
+    border-radius: 19px;
+
+}
+
+input {
+    background-color: yellow;
+}
+
+#img-container {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+#img-container img {
+    width: 10rem;
+    border: 2px solid black;
+    height: 10rem;
+    border-radius: 20px;
+}
+
+#copyrights {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+}

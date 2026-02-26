@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Shop</h1>
+        <hr>
+    </header>
+    <div>
+        <form id="productForm" onsubmit="getUserInputs(event)">
+
+            <label for="catalogNumber">Catalog Number:</label>
+            <input type="number" id="catalogNumber" name="catalogNumber" required min="1" max="999">
+
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required maxlength="30">
+
+            <label for="description">Product Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required min="1" max="999">
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="" selected disabled>Select category</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home</option>
+                <option value="other">Other</option>
+            </select>
+
+
+            <label for="img">Product image:</label>
+            <input type="text" id="img" name="img" required placeholder="enter image URL">
+
+            <button>add product</button>
+        </form>
+        <table>
+            <thead>
+                <th>Catalog Number</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Product image</th>
+
+            </thead>
+            <tbody id="content">
+
+            </tbody>
+
+        </table>
+        <table>
+            <tr>
+                <td>total</td>
+                <td id="total"></td>
+            </tr>
+            <tr>
+                <td>average price</td>
+                <td id="averagePrice"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
