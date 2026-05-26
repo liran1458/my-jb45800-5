@@ -1,0 +1,51 @@
+/* כל העמוד תופס 100% מהמסך */
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* אין סקרול */
+
+}
+
+header {
+    text-align: center;
+}
+
+/* עוטף את כל האפליקציה */
+.allPage {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Header | Main | Footer */
+}
+
+/* אזור התוכן המרכזי */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    /* שמאל גמיש, ימין קבוע */
+    gap: 20px;
+    padding: 20px;
+
+    /* גורם לבאנר להתארך לגובה */
+    align-items: stretch;
+
+    /* חשוב: שלא ייווצר סקרול פנימי */
+    overflow: hidden;
+}
+
+/* אזור הכלבים + חתולים */
+.pets-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* Dogs מעל Cats */
+    gap: 20px;
+
+    /* כדי שהחלק השמאלי יתפרס לגובה */
+    overflow-y: auto;
+    /* אם יש הרבה תוכן, רק הוא יגלול */
+}
